@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  min-height: 100vh;
+  width: 100%;
+  font-family: 'Nunito', sans-serif;
+  color: #eee;
+  background: #acb0e9;
+}
+
+.container {
+  width: 85vw;
+  padding: 1rem;
+  margin: 2rem auto;
+  color: #dd0f0f;
+  background: #eee;
+
+}
+.container h1#title {
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  text-align: center;
+  margin: 1rem;
+}
+.container h1#title::selection {
+  color: #eee;
+  background: #dd0f0f;
+}
+
+
+.container svg text {
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+}
+
+.container svg .bar {
+  fill: rgba(38, 9, 168, 0.7);
+}
+.container svg .bar:hover {
+  fill: rgb(226, 13, 13);
+}
+.container div#tooltip {
+  
+  position: absolute;
+  border-radius: 4px;
+  color: #eee;
+  background: #292b85;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  pointer-events: none;
+  opacity: 0;
+}
+
+
+
+
+@media (max-width: 700px) {
+  .container h1#title {
+    font-size: 1.8rem;
+  }
+  .container div#tooltip {
+    font-size: 1rem;
+  }
+}
